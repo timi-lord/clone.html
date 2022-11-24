@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- this is an internal css -->
+   
+    <script src="https://kit.fontawesome.com/b5a8176e16.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .house {
+            display: flex;
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            margin: 0;
+            box-shadow: 0px -22px 27px 17px;
+            padding: 0;
+            position: fixed;
+        }
+
+        .list {
+            font-family: poppins, sans-serif;
+            display: flex;
+            width: 100%;
+            justify-content: end;
+        }
+
+        .list ul {
+            display: flex;
+            font-family: Poppins, sans-serif;
+            font-weight: 600;
+            justify-content: end;
+        }
+
+        .list ul li {
+            display: flex;
+            list-style: none;
+            padding: 15px 15px 30px 15px;
+        }
+
+        .list a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .list a:hover {
+            color: red;
+        }
+
+        .logo {
+            margin: 20px;
+        }
+
+        section.just {
+            min-height: calc(100vh - 90px);
+            /* background: 50% center / cover; */
+            padding: calc(90px + 0rem) 0px 0rem;
+            background: url(home.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .wow {
+            display: block;
+            padding-left: 150px;
+            padding-top: 250px;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .wow a {
+            color: aliceblue;
+        }
+
+        .right {
+            font-family: poppins, sans-serif;
+            font-weight: 600;
+            justify-content: center;
+            border-radius: 7px;
+            display: inline-block;
+            background-color: #dc3545;
+            text-transform: uppercase;
+            transition: color 0.3s;
+            padding: 16px 15px;
+        }
+
+        .lend {
+            font-family: poppins, sans-serif;
+            font-weight: 600;
+            justify-content: center;
+            border-radius: 7px;
+            padding-right: 20px;
+            padding: 16px 25px;
+            display: inline-block;
+            margin-right: 10px;
+            text-transform: uppercase;
+            background-color: #dc3545;
+        }
+
+        .wow a:hover {
+            background-color: brown;
+            transition: 1s;
+        }
+
+        .easy {
+            color: red;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 30px;
+            margin-top: 50px;
+        }
+
+        .will {
+            font-weight: 300;
+        }
+
+        .home {
+            display: grid;
+            grid-template-areas: "auto auto auto";
+            padding-top: 50px;
+        }
+
+        .grid {
+            width: 100%;
+
+            height: 400px;
+            padding-top: 50px;
+            display: grid;
+            grid-template-areas: "auto auto";
+        }
+
+        .girls {
+            display: grid;
+            box-sizing: border-box;
+        }
+
+        .work {
+            display: grid;
+            background-color: #dc3545;
+            color: aliceblue;
+            padding-left: 10px;
+            padding-right: 10px;
+            box-sizing: border-box;
+        }
+
+        .welcome {
+            padding-top: 40px;
+        }
+
+        .million {
+            font-size: 40px;
+            font-weight: 700;
+            padding-top: 0;
+            font-family: Poppins, sans-serif;
+
+        }
+
+        .much {
+            font-family: poppins, sans-serif;
+        }
+
+        .welcome {
+            text-transform: uppercase;
+        }
+
+        .more {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-family: poppins, sans-serif;
+            width: 150px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            background-color: #dc3545;
+            /* border: solid aliceblue; */
+            border-radius: 7px;
+            /* padding: 15px 0px 10px 10px; */
+        }
+
+        .more {
+            width: 150px;
+            height: 40px;
+            border: solid aliceblue;
+            border-width: 1px;
+            color: aliceblue;
+            padding-top: 20px;
+            /* align-items: center; */
+            text-align: center;
+        }
+
+        .more a {
+            width: 150px;
+            height: 40px;
+            font-weight: 500;
+            color: aliceblue;
+        }
+
+        .image {
+            display: flex;
+
+        }
+
+        .bros {
+            width: 100%;
+            height: 400px;
+            padding-top: 50px;
+            grid-template-areas: "auto auto";
+            display: grid;
+        }
+
+        .gobe {
+            display: grid;
+        }
+
+        .container {
+            padding-left: 10px;
+            padding-right: 10px;
+            align-items: center;
+            display: grid;
+        }
+
+        .and {
+            font-family: poppins, sans-serif;
+            padding-top: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: grey;
+            font-size: smaller;
+        }
+
+        .money {
+            font-family: poppins, sans-serif;
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        .fifty {
+            font-family: poppins, sans-serif;
+            justify-content: space-between;
+        }
+
+        a.better {
+            color: #dc3545;
+            text-decoration: none;
+            width: 200px;
+            height: 40px;
+            align-items: center;
+        }
+
+        .better {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: poppins, sans-serif;
+            /* background-color: blue; */
+            width: 200px;
+            padding-top: 20px;
+            height: 40px;
+            text-align: center;
+            align-items: center;
+            border: solid #dc3545;
+            border-radius: 7px;
+            border-width: 1.5px;
+        }
+
+        a.better:hover {
+            width: 200px;
+            height: 40px;
+            background-color: #dc3545;
+            color: aliceblue;
+        }
+
+        a.better :hover {
+            background-color: #dc3545;
+            color: aliceblue;
+        }
+
+        .copic {
+            display: grid;
+            grid-template-areas: "auto auto";
+        }
+
+        .picle {
+            display: grid;
+        }
+
+        .village {
+            display: grid;
+            width: 480px;
+            height: 400px;
+            padding-top: 50px;
+        }
+
+        .giant {
+            font-family: poppins, sans-serif;
+            text-transform: uppercase;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .border {
+            width: 470px;
+            padding-left: 10px;
+            display: flex;
+            border-bottom: 0.75px;
+            align-items: center;
+            text-transform: uppercase;
+            border: solid grey;
+            border-width: 0.5px;
+        }
+
+        a.view {
+            text-transform: uppercase;
+            font-family: poppins, sans-serif;
+            font-weight: 700;
+            text-align: center;
+            padding-top: 20px;
+            border-width: 1px;
+            width: 200px;
+            height: 40px;
+            border: solid #dc3545;
+            border-radius: 7px;
+            color: #dc3545;
+        }
+
+        a.view:hover {
+            color: aliceblue;
+            background-color: #dc3545;
+        }
+
+        #red {
+            color: darkred;
+        }
+
+        .foot {
+            background-color: rgb(53, 50, 50);
+            width: 100%;
+            height: 300px;
+            font-family: poppins, sans-serif;
+            display: grid;
+            /* grid-gap: 20px; */
+            grid-template-areas: "auto auto auto auto";
+        }
+
+        .legal {
+            display: grid;
+        }
+
+        .ture {
+            display: grid;
+        }
+
+        .info {
+            display: grid;
+        }
+
+        #red {
+            padding-top: 40px;
+        }
+
+        .ture {
+            padding-top: 10px;
+        }
+
+        .company {
+            display: grid;
+            padding-bottom: 0%;
+        }
+
+        .first {
+            padding-bottom: 50%;
+            padding-left: 0%;
+        }
+
+        .talk {
+            width: 250px;
+            padding-left: 30px;
+            padding-bottom: 50px;
+            color: aliceblue;
+        }
+
+        .copri {
+            width: 100%;
+            color: aliceblue;
+            height: 50px;
+            text-align: center;
+            padding-top: 25px;
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="house">
+            <div class="image"><img src="loan.jpg" width=150px" height="40px" class="logo">
+
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="#"><img src="search.svg" width="20px" height="20px"> Invest And Earn</a></li>
+                    <li><a href="#">Akawo / Ajo</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <div><a href="https://www.freepik.com" title="Freepik"></a><a
+                        href="https://www.flaticon.com/" title="Flaticon"></a></div>
+                        <a href="https://www.flaticon.com/free-icons/search" title="search icons"></a>
+            
+            
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="just">
+        <div class="wow">
+            <a href="#" class="lend">loan</a>
+            <a href="#" class="right">lend and earn</a>
+        </div>
+    </section>
+    <section>
+        <center>
+
+            <div class="easy">Simple Proccess</div>
+            <div class="will">Applying Will Not Impact Your Personal Credit Score</div>
+        </center>
+        <div class="home">
+            <div class="few">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 20px; height: 20px;">
+                    <!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z" />
+                </svg>
+                <div> a few questions to inform us you’re seeking funding for your business.</div>
+            </div>
+            <div class="we">
+                We will review your submitted information and determine which financial products best
+                match your needs.
+            </div>
+            <div class="your"> We will review your submitted information and determine which financial products best
+                match your needs. </div>
+        </div>
+        <div class="grid">
+            <div class="girls"><img src="girls.jpg" width="500px" height="100%"></div>
+            <div class="work">
+                <div class="welcome">Welcome to loanhim</div>
+                <div class="million">Get Loan up to 5Million and more!</h2>
+                </div>
+                <div class="much"> Loanhim is run by an experienced team of financial and technology professionals, with
+                    several years of industry experience. We are not just another online Fintech company. Loanhim is on
+                    a mission to solve real problems and make impact in the process. Read more about our vision. </div>
+                <a href="#" class="more">learn More</a>
+            </div>
+        </div>
+    </section>
+    <section class="bros">
+        <div class="gobe"><img src="guysjpg.jpg" width="500px" height="100%"></div>
+        <div class="container">
+            <div class="and">lend and earn</div>
+            <div class="money">Let your money do the work!</div>
+            <div class="fifty">On loanhim you can get fifty percent yearly on your investment, that means if you put in
+                one
+                million naira you will have an extra income of five hundred thousand.</div>
+            <a href="#" class="better">learn more</a>
+        </div>
+    </section>
+    <section class="copic">
+        <div class="picle"><img src="right.svg" width="500px" height="100%"></div>
+        <div class="village">
+            <div class="giant">Frequently Asked Questions?</div>
+            <div class="border" style="border-radius: 2px;font-weight: 700;font-family: sans-serif;">what is a personal
+                loan?</div>
+            <div class="border" style="border-radius: 2px;font-weight: 700;font-family: sans-serif;">do i qualify for a
+                loan?</div>
+            <div class="border" style="border-radius: 2px;font-weight: 700;font-family: sans-serif;">how much can i get
+                from loanhim?</div>
+            <div class="style" style="padding-top: 50px;"><a href="#" class="view"
+                    style="border-width: 0.5px;padding-bottom: 15px;padding-left: 25px;padding-right: 25px;">view
+                    more</a></div>
+        </div>
+    </section>
+    <footer class="foot">
+        <div class="ture"><img src="sm-loanhim-logo-trans.9ba15a6d.png" width="100px" height="50px"
+                style="padding-left: 40px;">
+            <div class="talk">At Loanhim, our primary objective is to create more opportunities to get more financially
+                empowered. Follow us on our social media platforms, as we make this objective a possibility.</div>
+        </div>
+        <div class="company">
+            <div id="red">Company</div>
+            <ul class="first" style="padding-bottom: 70%;">
+                <li style="list-style: none;"><a href="#" style="text-decoration: none; color: aliceblue;">About Us</a>
+                </li>
+                <li style="list-style: none;"><a href="#" style="text-decoration: none; color: aliceblue;">Contact
+                        Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="legal">
+            <div id="red">Legal</div>
+            <ul class="first">
+                <li style="list-style: none;"><a href="#" style="text-decoration: none; color: aliceblue;">Cookie
+                        Policy</a>
+                </li>
+                <li style="list-style: none;"><a href="#" style="text-decoration: none; color: aliceblue;">Privacy
+                        Policy</a>
+                </li>
+                <li style="list-style: none;"><a href="#" style="text-decoration: none; color: aliceblue;">Terms and
+                        Conditions</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <div id="red"> Contact info </div>
+            <ul class="first" style="padding-bottom: 70%;">
+                <li style="list-style: none;"><a href="#" style="text-decoration: none; color: aliceblue;">Location</a>
+                </li>
+                <li style="list-style: none;"><a href="#" style="text-decoration: none; color: aliceblue;">+234
+                        9029454911
+                        9029454911</a></li>
+        </div>
+
+    </footer>
+    <div class="copri"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 20px; height: 20px;">
+            <!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+            <path
+                d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464zM255.1 176C255.1 176 255.1 176 255.1 176c21.06 0 40.92 8.312 55.83 23.38c9.375 9.344 24.53 9.5 33.97 .1562c9.406-9.344 9.469-24.53 .1562-33.97c-24-24.22-55.95-37.56-89.95-37.56c0 0 .0313 0 0 0c-33.97 0-65.95 13.34-89.95 37.56c-49.44 49.88-49.44 131 0 180.9c24 24.22 55.98 37.56 89.95 37.56c.0313 0 0 0 0 0c34 0 65.95-13.34 89.95-37.56c9.312-9.438 9.25-24.62-.1562-33.97c-9.438-9.312-24.59-9.219-33.97 .1562c-14.91 15.06-34.77 23.38-55.83 23.38c0 0 .0313 0 0 0c-21.09 0-40.95-8.312-55.89-23.38c-30.94-31.22-30.94-82.03 0-113.3C214.2 184.3 234 176 255.1 176z" />
+        </svg>&copy; Copyrights, All rights reserved by Loanhim </div>
+</body>
+
+</html>
